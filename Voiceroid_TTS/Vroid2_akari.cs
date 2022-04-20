@@ -2,6 +2,11 @@
 using System.Diagnostics;
 using System.Threading;
 using System.Windows.Automation;
+using Codeer.Friendly;
+using Codeer.Friendly.Dynamic;
+using Codeer.Friendly.Windows;
+using Codeer.Friendly.Windows.Grasp;
+using Codeer.Friendly.Windows.NativeStandardControls;
 
 namespace Voiceroid_TTS
 {
