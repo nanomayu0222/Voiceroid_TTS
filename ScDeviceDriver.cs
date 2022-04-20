@@ -6,10 +6,15 @@ using System.Threading;
 using System.Threading.Tasks;
 using Codeer.Friendly;
 using Codeer.Friendly.Dynamic;
+using Codeer.Friendly.Windows;
+using Codeer.Friendly.Windows.Grasp;
+using Codeer.Friendly.Windows.NativeStandardControls;
+using RM.Friendly.WPFStandardControls;
+using ScDriver;
 
 namespace ScDriver.VOICEROID2
 {
-    public class ScDeviceDriver
+    public class ScDeviceDriver : ScBaseDriver, IScBaseDriver
     {
         private readonly string DrvName = "Voiceroid2.Driver@echoseika.hgotoh.jp";
         private readonly string DrvVersion = "20200430/c";
@@ -118,7 +123,7 @@ namespace ScDriver.VOICEROID2
         /// <param name="cid">話者CID</param>
         /// <param name="talkText">発声させるテキスト</param>
         /// <returns>発声にかかった時間（ミリ秒）</returns>
-        public double Play(int cid, string talkText)
+        public override double Play(int cid, string talkText)
         {
             Semaphore.Wait();
 
