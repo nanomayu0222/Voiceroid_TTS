@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Voiceroid_TTS
@@ -26,5 +19,5 @@ namespace Voiceroid_TTS
             //再生開始・終了の判別を行う
             //https://hgotoh.jp/wiki/doku.php/documents/voiceroid/assistantseika/assistantseika-093
         }
-    }
+    }    
 }
