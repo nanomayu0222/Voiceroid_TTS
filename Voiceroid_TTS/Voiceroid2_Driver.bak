@@ -139,7 +139,6 @@ namespace Voiceroid2_Driver
                 }
             }
 
-            if(p == null) return -1.0;
 
             Semaphore.Wait();
 

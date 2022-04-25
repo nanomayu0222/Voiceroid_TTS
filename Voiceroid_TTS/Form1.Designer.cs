@@ -32,9 +32,9 @@ namespace Voiceroid_TTS
             this.button1 = new System.Windows.Forms.Button();
             this.txtBox_waitingTxt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Label_IsSpeakingStatus = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.Lavel_VR2_Status = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -65,45 +65,48 @@ namespace Voiceroid_TTS
             this.label1.TabIndex = 2;
             this.label1.Text = "Status:";
             // 
-            // label2
+            // Label_IsSpeakingStatus
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MS UI Gothic", 14F);
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(128, 331);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 28);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "<Speaking>";
+            this.Label_IsSpeakingStatus.AutoSize = true;
+            this.Label_IsSpeakingStatus.Font = new System.Drawing.Font("MS UI Gothic", 14F);
+            this.Label_IsSpeakingStatus.ForeColor = System.Drawing.Color.Green;
+            this.Label_IsSpeakingStatus.Location = new System.Drawing.Point(128, 331);
+            this.Label_IsSpeakingStatus.Name = "Label_IsSpeakingStatus";
+            this.Label_IsSpeakingStatus.Size = new System.Drawing.Size(117, 28);
+            this.Label_IsSpeakingStatus.TabIndex = 2;
+            this.Label_IsSpeakingStatus.Text = "<Status>";
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MS UI Gothic", 10F);
-            this.label3.Location = new System.Drawing.Point(298, 337);
+            this.label3.Location = new System.Drawing.Point(21, 375);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(162, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Voiceroid2 Status:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label4
+            // Lavel_VR2_Status
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("MS UI Gothic", 10F);
-            this.label4.Location = new System.Drawing.Point(473, 338);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "<Status>";
+            this.Lavel_VR2_Status.AutoSize = true;
+            this.Lavel_VR2_Status.Font = new System.Drawing.Font("MS UI Gothic", 10F);
+            this.Lavel_VR2_Status.Location = new System.Drawing.Point(189, 375);
+            this.Lavel_VR2_Status.Name = "Lavel_VR2_Status";
+            this.Lavel_VR2_Status.Size = new System.Drawing.Size(84, 20);
+            this.Lavel_VR2_Status.TabIndex = 3;
+            this.Lavel_VR2_Status.Text = "<Status>";
+            this.Lavel_VR2_Status.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(591, 385);
-            this.Controls.Add(this.label4);
+            this.ClientSize = new System.Drawing.Size(591, 424);
+            this.Controls.Add(this.Lavel_VR2_Status);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Label_IsSpeakingStatus);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtBox_waitingTxt);
             this.Controls.Add(this.button1);
@@ -119,9 +122,9 @@ namespace Voiceroid_TTS
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtBox_waitingTxt;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Label_IsSpeakingStatus;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label Lavel_VR2_Status;
     }
 }
 
